@@ -1,0 +1,25 @@
+{
+  "name": "realblogserver",
+  "version": "1.0.0",
+  "description": "It is CRUD Application\r Full Stack blog site\r you can only create blogs\r STACK\r     1.React\r     2.Redux\r     3.Nodejs\r     4.MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Navene",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.6",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
