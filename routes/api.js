@@ -10,7 +10,7 @@ router.route('/newblog').post(async (req,res)=>{
         res.send({ statusload:true, msg : "Blog created successfully",blog:blog})
     } catch (error) {
         console.log(error);
-        res.send({ statusload:false, msg : "Unable to create a blog"})
+        res.send({ statusload:false, feedback : "Unable to create a blog"})
     }
 })
 
