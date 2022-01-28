@@ -3,10 +3,10 @@ const Blog = require('../models/Blog');
 const { checkToken } = require('../middleware/middleware');
 
 //* Create a new blog
-router.route('/newblog').post(checkToken,async (req,res)=>{
-    const { title, description, keywordone, keywordtwo, keywordthree, url } = req.body;
+router.route('/newblog').post(async (req,res)=>{
+    const { title, description, creator } = req.body;
     try {
-        const blog = await Blog.create({ title, description, keywordone, keywordtwo, keywordthree,username:req.user.username,url })
+        const blog = await Blog.create({ title, description, creator })
         res.send({ statusload:true, msg : "Blog created successfully",blog:blog})
     } catch (error) {
         console.log(error);
